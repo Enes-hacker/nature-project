@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  
+    <style>
+        * {
+            box-sizing: border-box;
+            /*always use it*/
+        }
+
+        h1,
+        h3,
+        p,
+        ul,
+        li,
+        body,
+        html {
+            margin: 0;
+            height: 100%;
+        }
+
+        /*Header Part*/
+
+        h1,
+        h2,
+        h4,
+        h3,
+        p,
+        button,
+        div {
+            /*slectors*/
+            font-family: Arial, Helvetica, sans-serif;
+            /*changing of font*/
+        }
+
+        .menubar ul li {
+            display: inline-block;
+            /*changes the list/menu positioning */
+            margin-left: 0px;
+            padding: 12px;
+        }
+
+        .menubar ul li a {
+            display: inline-block;
+            /*changes the list/menu positioning */
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 29px;
+        }
+
+        .menubar {
+            background: rgba(0, 0, 0, 0.5);
+            width: 40%;
+            padding: 0px;
+            margin: 0 auto;
+            margin-top: 0px;
+            border-radius: 37px;
+        }
+
+        .header {
+            background: url('/images/header.jpg');
+            background-position: bottom;
+            color: white;
+            /*changes the text elements color of div*/
+            padding: 20px;
+            height: 120%;
+            background-size: cover;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .caption-part {
+            background: rgba(0, 0, 0, 0.5);
+            width: 70%;
+            margin: 200px auto;
+            border-radius: 34px;
+        }
+
+        .caption-part h1 {
+            text-align: center;
+            font-size: 67px;
+            padding-top: 1rem;
+        }
+
+        .caption-part h3 {
+            text-align: center;
+            font-size: 17px;
+
+        }
+
+        ul li a:hover {
+            color: gold;
+        }
+
+        .header  {
+          width: 100%;
+          text-align: center;
+        }
+
+        .btn-header{
+            background: #198754;
+            border: 1px solid #198754;
+            color: white;
+            padding: 12px;
+            border-radius: 5px;
+
+            background: #198754;
+            border: 1px solid #198754;
+            color: white;
+            text-align: center;
+            /*positioning  3rem up to down ; 43 rem left to right */
+            padding: 12px;
+            /*padding space between inner element*/
+            border-radius: 4px;
+           
+        }
+
+        .btn-header:hover {
+            background: none;
+            cursor: pointer;
+            opacity: 0.7;
+
+        }
+
+
+        .clear-fix {
+            clear: both;
+        }
+
+
+        /*Header Part End*/
+
+        /*SECTION TWO*/
+        .section-two {
+            height: 160px;
+            width: 50%;
+            margin: 80px auto;
+
+        }
+
+        .quote h4,
+        p {
+            text-align: center;
+
+        }
+
+        .quote h4 {
+            font-size: 25px;
+            color: #198754;
+            text-shadow: 1px 1px black;
+
+
+        }
+
+        .quote p {
+            color: #b7bbc0;
+
+        }
+
+
+
+        .btn-sectiontwo {
+            background: #198754;
+            border: 1px solid #198754;
+            color: white;
+            margin-left: 330px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .btn-sectiontwo:hover {
+            background: none;
+            color: #198754;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        /*SECTION TWO END*/
+
+        /*SECTION THREE*/
+        .section-three {
+            background: #198754;
+            /*size of section 3 with background color green*/
+            height: 23rem;
+
+        }
+
+
+        .icons {
+            width: 15%;
+            /*icon div sizes 4x15%*/
+            float: left;
+            padding: 15px;
+            /*space between inner part of element(text)*/
+            text-align: center;
+            font-size: 22px;
+            /*font size of text ans symbolc*/
+            color: white;
+        }
+
+        .icons i {
+            width: 6rem;
+            /*height and width of icon div's i elements div*/
+            height: 6rem;
+            padding-top: 2.2rem;
+            /*space from top of inner element*/
+            border: 2px solid #48ca95;
+            /*setting a border of elements*/
+            border-radius: 7rem;
+            /*border radius*/
+            border-color: aliceblue;
+        }
+
+        .icons:nth-child(2) {
+            /*distance from left with n-th child elements*/
+            margin-left: 6.33%;
+            margin-right: 6.33%;
+        }
+
+        .icons:nth-child(4) {
+            margin-left: 6.33%;
+            margin-right: 6.33%;
+        }
+
+
+        .caption-p3 {
+            width: 50%;
+            background-color: #198754;
+            margin: 0 auto;
+            padding-top: 60px;
+            padding-bottom: 40px;
+
+        }
+
+        .caption-p3 p,
+        h1 {
+            text-align: center;
+            text-shadow: 2px 1px black;
+        }
+
+        .caption-p3 h1 {
+            font-size: 50px;
+            color: white;
+        }
+
+        .caption-p3 p {
+            font-size: 17px;
+            color: white;
+        }
+
+        /*SECTION THREE END*/
+
+        /*Section four */
+        .section-four {
+            background-image: url('/images/beach.jpg');
+            background-position: bottom;
+            /*shows from the bottom part of the pic*/
+            height: 85%;
+            /*height 85% over 100%*/
+
+        }
+
+        .section-four h1 {
+            /*all h1 tags including section-four class*/
+            color: white;
+            /*text color*/
+            padding-top: 15rem;
+            font-size: 3rem;
+            text-shadow: 2px 2px gray;
+
+        }
+
+        .btn-sectionfour{
+            width: 100%;  
+            text-align: center;
+        }
+
+        .btn-sectionfour button {
+            background: #198754;
+            border: 1px solid #198754;
+            color: white;
+            text-align: center;
+            /*positioning  3rem up to down ; 43 rem left to right */
+            padding: 12px;
+            /*padding space between inner element*/
+            border-radius: 4px;
+
+            /*the button with circled angles*/
+            
+        }
+
+        .btn-sectionfour:hover {
+            background: none;
+            color: white;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        /*Section four end*/
+
+        /*SECTION FIVE*/
+        .section-five {
+            height: 66rem;/*size of section 5 div*/
+        }
+
+        .caption-s5 {   /*caption properties*/
+            margin-top: 6rem;
+            color: #198754;
+            text-shadow: 2px 2px gray;
+        }
+
+        .row-1 {  /*row-1 div and images construction*/
+            padding-top: 3rem;
+            width: 79%;
+            height: 450px;
+            margin: 0 auto;
+        }
+
+        .pic-1 {
+            background: url('/images/1.jpg'); /*div background image*/
+            width: 50%;
+            float: left;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .pic-2 {
+            background: url('/images/2.jpg');
+            width: 50%;
+            float: right;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .row-2 {
+            width: 79%;
+            height: 450px;
+            margin: 0 auto;
+        }
+
+        .pic-3 {
+            background: url('/images/3.jpg');
+            width: 50%;
+            float: left;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .pic-4 {
+            background: url('/images/4.jpg');
+            width: 50%;
+            float: right;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .pic-1 h3 {
+            color: white;
+            margin-top: 1rem;
+            margin-left: 5rem;
+            font-size: 15px;
+        }
+        .pic-1 h4{
+            color: white;
+            margin-top: 17rem;
+            margin-left: 5rem;
+            font-size: 13px;
+        }
+
+        .pic-2 h3 {
+            color: white;
+            margin-top: 1rem;
+            margin-left: 5rem;
+            font-size: 15px;
+        }
+        .pic-2 h4{
+            color: white;
+            margin-top: 17rem;
+            margin-left: 5rem;
+            font-size: 13px;
+        }
+
+        .pic-3 h3 {
+            color: white;
+            margin-top: 1rem;
+            margin-left: 5rem;
+            font-size: 15px;
+        }
+        .pic-3 h4{
+            color: white;
+            margin-top: 18rem;
+            margin-left: 5rem;
+            font-size: 13px;
+        }
+
+        .pic-4 h3 {
+            color: white;
+            margin-top: 1rem;
+            margin-left: 5rem;
+            font-size: 15px;
+        }
+        .pic-4 h4{
+            color: white;
+            margin-top: 19rem;
+            margin-left: 5rem;
+            font-size: 13px;
+        }
+
+        /*SECTION FIVE END*/
+        /*SECTION SIX*/
+        .section-six{
+            height: 19rem;
+            background:#198754;
+        }
+
+        .caption-s6 h1 { /*h1 tag inside of caption-s6 div*/
+            color: white;
+            text-align: center;
+            text-shadow: 2px 1px black;
+           
+           
+        }
+
+        .caption-s6  { 
+            padding-top: 7rem;
+            
+        }
+
+        .btn-sectionsix {
+            align-items: center;
+            width: auto;
+            text-align: center;
+            padding-top: 12px;
+        }
+        .btn-s6 {
+            background: #f8f9fa;
+            border: 1px solid #198754;
+            color: white;
+            color: black;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .btn-s6:nth-child(2) {
+            margin-left: 26px;
+        }
+
+        .btn-s6:hover {
+            background: lightgreen;
+            cursor: pointer;
+            opacity: 8.7;
+
+        }
+        
+        /*SECTION SIX END*/
+        /*FOOTER*/
+        .copyright {
+            color: #b7bbc0;
+            font-size: 13px;
+            text-align: center;
+
+        }
+
+        .footer-icons {
+            width: 25%;
+            font-size: 1.5rem;
+            margin: 0 auto;
+            padding-left: 5.5rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            
+            
+        }
+
+        .footer-icons i {
+            border: 2px solid #198754;
+            border-radius:10rem;
+            height: 3.5rem;
+            width: 3.5rem;
+            padding-top: 13px;
+            padding-left:15px ;
+            background-color: #198754;
+            color: white;
+
+        }
+
+        .footer-icons i:hover {
+            background: none;
+            color: #198754;
+        }
+
+      
+
+        .footer-icons i:nth-child(2) {
+            margin-left: 1rem;
+            padding-left:12px ;
+        }
+
+        .footer-icons i:nth-child(3) {
+            margin-left: 1rem;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        
+        /*FOOTER END*/
+    </style>
+</head>
+
+
+<body>
+    <!--HEADER PART-->
+    <div class="header">
+        <div class="menubar">
+            <ul>
+                <li>
+                    <a href="">Начало</a>
+                </li>
+                <li>
+                    <a href="">За Нас</a>
+                </li>
+                <li>
+                    <a href="">Контакти</a>
+                </li>
+                <li>
+                    <a href="">Помогни</a>
+                </li>
+            </ul>
+        </div>
+        <div class="caption-part">
+            <h1>Природа</h1>
+            <h3>Всичко в природата ни кани постоянно да бъдем това, което сме</h3>
+            <button class="btn-header">Научи повече</button>
+
+        </div>
+
+        <div class="clear-fix"></div>
+    </div>
+    <!--HEADER PART END-->
+
+    <!--SECTION TWO-->
+    <div class="section-two">
+        <div class="quote">
+            <h4>Природата може без човек, но той не може без природата</h4>
+            <p>Али Абшерони</p>
+            <button class="btn-sectiontwo">Още фрази</button>
+        </div>
+
+        <div class="clear-fix"></div>
+    </div>
+    <!--SECTION TWO END-->
+
+    <!--SECTION THREE-->
+    <div class="section-three">
+        <div class="caption-p3">
+            <p>нашите цели</p>
+            <h1>да помогнем на природата</h1>
+        </div>
+        <div class="icons">
+            <i class="fa-regular fa-heart"></i>
+            <p>дървета</p>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-pen"></i>
+            <p>поставяне на цели</p>
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-bolt"></i>
+            <p>приют за животни</p>
+        </div>
+        <div class="icons">
+            <i class="fa-regular fa-map"></i>
+            <p>развитие</p>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+
+    <!--SECTION THREE END-->
+
+    <!--SECTION FOUR-->
+    <div class="section-four">
+        <div class="components-s4">
+            <h1>Включи се и ти!</h1>
+            <div class="btn-sectionfour"> <button >Запиши се!</button></div>
+           
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+    <!--SECTION FOUR END-->
+    <!--SECTION FIVE-->
+    <div class="section-five">
+        <div class="caption-s5">
+            <h1>Последната ни дейност</h1>
+        </div>
+        <div class="row-1">
+            <div class="pic-1">
+                <h4><b>засадихме 50 000 дръвчета!</b></h4>
+                <h3>С много усилия го направихме!</h3>
+
+            </div>
+            <div class="pic-2">
+                <h4><b>събрахме 100 000 капачки!</b></h4>
+                <h3>С много усилия го направихме!</h3>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="pic-3">
+                <h4><b>засадихме 50 000 дръвчета!</b></h4>
+                <h3>С много усилия го направихме!</h3>
+
+            </div>
+            <div class="pic-4">
+                <h4><b>събрахме 100 000 капачки!</b></h4>
+                <h3>С много усилия го направихме!</h3>
+            </div>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+    <!--SECTION FIVE END-->
+
+    <!--Section Six-->
+    <div class="section-six">
+        <div class="caption-s6">
+            <h1>Невъзможно е да не помогнеш!</h1>
+        </div>
+        <div class="btn-sectionsix">
+            <button class="btn-s6">Свържи се с нас!</button>
+            <button class="btn-s6">Помогни!</button>
+        </div>
+        <div class="clear-fix"></div>
+
+    </div>
+    <!--Section Six End-->
+
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/enes.aliev.92"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/channel/UC22NnqwttSzgkdyuUu3VYuA"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/enes_mehmed/"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+        <div class="copyright">
+           <p>BLACATZ &#169 Всички права запазени</p> 
+        </div>
+    </div>
+    <!--FOOTER END-->
+
+
+
+
+</body>
+
+</html>
